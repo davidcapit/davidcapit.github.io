@@ -9,9 +9,9 @@ google.charts.load('current', {'packages':['table']});
 
       
 function getHighLow(scr) {
-    var queryString = encodeURIComponent('SELECT N,O,P,Q,R,S,AO limit 5');
+    var queryString = encodeURIComponent('SELECT B,C limit 100');
     var query = new google.visualization.Query(
-          'https://docs.google.com/spreadsheets/d/1dXP9yGEzNlmRxuSwCr2kyMM9CcS5hloIxKvef0RSa10/gviz/tq?gid=559927965&headers=1&tq=' + queryString);
+     'https://docs.google.com/spreadsheets/d/1dXP9yGEzNlmRxuSwCr2kyMM9CcS5hloIxKvef0RSa10/gviz/tq?gid=465894237&headers=1&tq=' + queryString);
       query.send(setHighLow);    
 };
 
@@ -20,52 +20,52 @@ function setHighLow(response) {
         alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
         return;
       }
-      var data = response.getDataTable().getValue(0,1);
+      var data = response.getDataTable().getValue(0,0);
       document.getElementById("myText1").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(0,2);
+      var data = response.getDataTable().getValue(1,0);
       document.getElementById("myText2").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(0,3);
+      var data = response.getDataTable().getValue(2,0);
       document.getElementById("myText3").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(0,4);
+      var data = response.getDataTable().getValue(3,0);
       document.getElementById("myText4").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(0,5);
+      var data = response.getDataTable().getValue(4,0);
       document.getElementById("myText5").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(1,1);
+      var data = response.getDataTable().getValue(5,0);
       document.getElementById("myText6").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(1,2);
+      var data = response.getDataTable().getValue(6,0);
       document.getElementById("myText7").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(1,3);
+      var data = response.getDataTable().getValue(7,0);
       document.getElementById("myText8").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(1,4);
+      var data = response.getDataTable().getValue(8,0);
       document.getElementById("myText9").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(1,5);
+      var data = response.getDataTable().getValue(9,0);
       document.getElementById("myText10").innerHTML = String(data);
           
-      var data = response.getDataTable().getValue(2,1);
+      var data = response.getDataTable().getValue(10,0);
       document.getElementById("myText11").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(2,2);
+      var data = response.getDataTable().getValue(11,0);
       document.getElementById("myText12").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(2,3);
+      var data = response.getDataTable().getValue(12,0);
       document.getElementById("myText13").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(2,4);
+      var data = response.getDataTable().getValue(13,0);
       document.getElementById("myText14").innerHTML = String(data);
       
-      var data = response.getDataTable().getValue(2,5);
+      var data = response.getDataTable().getValue(14,0);
       document.getElementById("myText15").innerHTML = String(data);
       
-      var data = String(response.getDataTable().getValue(0,6));
+      var data = String(response.getDataTable().getValue(0,1));
       document.getElementById("myText16").innerHTML = String(data);
           
       }
