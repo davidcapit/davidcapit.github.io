@@ -9,7 +9,7 @@ google.charts.load('current', {'packages':['table']});
 
       
 function getHighLow(scr) {
-    var queryString = encodeURIComponent('SELECT B,C limit 100');
+    var queryString = encodeURIComponent('SELECT D,A limit 100');
     var query = new google.visualization.Query(
      'https://docs.google.com/spreadsheets/d/1dXP9yGEzNlmRxuSwCr2kyMM9CcS5hloIxKvef0RSa10/gviz/tq?gid=465894237&headers=1&tq=' + queryString);
       query.send(setHighLow);    
