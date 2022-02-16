@@ -1,0 +1,367 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="9y9MpxSSiaQ5sVWGNJO71RcfoDCE0XrqPhQYWBjJ">
+<base href="https://members.capit.co.uk/dashboard"> 
+
+<meta name="alberon-uptime-monitor-tag" content="ok">
+
+<title>
+        Cap-It
+</title>
+
+<link rel="stylesheet" href="/build/default/prod/main.145456b46ef7e7825657.css">
+
+<script>
+    window.sentry = {
+        dsn: "https:\/\/dcdc353d56f843d2969848b7e43a982a@sentry.io\/1778945",
+        env: "production",
+        user_id: 80,
+    };
+</script>
+
+
+<script src="/build/default/prod/main.b3428f83db2551be3e7c.js" defer></script>
+
+
+
+        <script>
+            window.addressKey = "UsScp4gL-kGxrGRqeocelw22829";
+            window.companyKey = "0Qb-QqZOoH_httspXit9XxwWihY4_GZ78HrYg9gl";
+        </script>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    </head>
+<body>
+    <div id="app" class="d-flex flex-column h-100">
+            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="https://capit.co.uk">
+                Cap-It
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left Side Of Navbar -->
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+
+                <!-- Right Side Of Navbar -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Authentication Links -->
+                                                                        <li class="nav-item">
+                                <a class="nav-link" href="/admin">Nova</a>
+                            </li>
+                                                <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                 <span class="caret">Menu</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a href="https://members.capit.co.uk/dashboard" class="dropdown-item">Your account</a>
+                                                                    <a href="https://members.capit.co.uk/profile/80/edit" class="dropdown-item">Edit details</a>
+                                                                <a href="https://members.capit.co.uk/password/80" class="dropdown-item">Edit password</a>
+                                                                    <a href="https://members.capit.co.uk/price-indications/create" class="dropdown-item">Price guide</a>
+                                                                <a class="dropdown-item" href="https://members.capit.co.uk/logout"
+                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="https://members.capit.co.uk/logout" method="POST" style="display: none;">
+                                    <input type="hidden" name="_token" value="9y9MpxSSiaQ5sVWGNJO71RcfoDCE0XrqPhQYWBjJ">                                </form>
+                            </div>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </nav>
+
+        <main class=" h-100">
+            <div class="container h-100">
+                    
+        
+    <h2>Your account</h2>
+        <div class="row">
+        <div class="col-12 col-md-6">
+                <div class="card mb-3">
+                    <h4 class="card-header">Your entities</h4>
+                    <div class="card-body">
+                                                    <div class="row mb-2">
+                                <div class="col">
+                                    <a href="https://members.capit.co.uk/entities/53">David McInnes</a>
+                                </div>
+
+                                                                    <div class="col">
+                                        <span class="text-muted">Not yet eligible</span>
+                                    </div>
+                                
+                                                                    <div class="col-sm-5">
+                                        <a
+                                            class="btn btn-info"
+                                            href="https://members.capit.co.uk/1/eligibility-options/53"
+                                            role="button"
+                                        >
+                                            Choose eligibility
+                                        </a>
+                                    </div>
+                                
+                            </div>
+                                                    <div class="row mb-2">
+                                <div class="col">
+                                    <a href="https://members.capit.co.uk/entities/54">partnership</a>
+                                </div>
+
+                                                                    <div class="col">
+                                        <span class="text-muted">Not yet eligible</span>
+                                    </div>
+                                
+                                                                    <div class="col-sm-5">
+                                        <a
+                                            class="btn btn-info"
+                                            href="https://members.capit.co.uk/2/eligibility-options/54"
+                                            role="button"
+                                        >
+                                            Choose eligibility
+                                        </a>
+                                    </div>
+                                
+                            </div>
+                                                    <div class="row mb-2">
+                                <div class="col">
+                                    <a href="https://members.capit.co.uk/entities/69">BOCIOC M LIMITED</a>
+                                </div>
+
+                                                                    <div class="col">
+                                        <span class="text-success">Eligible to buy</span>
+                                    </div>
+                                
+                                                                    <div class="col-sm-5">
+                                        <a href="https://members.capit.co.uk/price-indications/create?69" class="btn btn-primary">Get price</a>
+                                    </div>
+                                
+                            </div>
+                                                    <div class="row ">
+                                <div class="col">
+                                    <a href="https://members.capit.co.uk/entities/71">BUBBLES &amp; PIPS LTD</a>
+                                </div>
+
+                                                                    <div class="col">
+                                        <span class="text-muted">Not yet eligible</span>
+                                    </div>
+                                
+                                                                    <div class="col-sm-5">
+                                        <a
+                                            class="btn btn-info"
+                                            href="https://members.capit.co.uk/3/eligibility-options/71"
+                                            role="button"
+                                        >
+                                            Choose eligibility
+                                        </a>
+                                    </div>
+                                
+                            </div>
+                                            </div>
+                                            <div class="card-footer">
+                            <p>
+                                Cap-It Certificates may only be purchased by the categories of investor listed below.
+                                Please choose the category that applies to you and confirm your eligibility by submitting
+                                the appropriate statement.
+                            </p>
+                            <ul class="nav nav-pills">
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link active dropdown-toggle text-wrap"
+                                        data-toggle="dropdown"
+                                        href="https://members.capit.co.uk/entities/create"
+                                        role="button"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        Add a company/LLP or partnership
+                                    </a>
+                                    <div class="dropdown-menu">
+                                                                                    <a href="https://members.capit.co.uk/entities/create?entityType=Partnership" class="dropdown-item">Partnership</a>
+                                                                                    <a href="https://members.capit.co.uk/entities/create?entityType=Company%2FLLP" class="dropdown-item">Company/LLP</a>
+                                                                            </div>
+                                </li>
+                            </ul>
+                        </div>
+                                    </div>
+                <div class="card">
+                    <h4 class="card-header">Your details</h4>
+                    <div class="card-body">
+                                                    <table class="table table-sm table-borderless">
+                                <tr>
+                                    <th class="text-right">Email</th>
+                                    <td>david.mcinnes@capit.co.uk</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-right">Password</th>
+                                    <td>******** <a href="https://members.capit.co.uk/password/80" class="btn btn-info btn-sm">Change password</a></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-right">Name</th>
+                                    <td>David McInnes</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-right">Date of birth</th>
+                                    <td>10 November 1995</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-right">Address</th>
+                                    <td>1 Taylors Green<br />
+London</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-right">Post code</th>
+                                    <td>
+                                        w37pe
+                                        <a href="https://members.capit.co.uk/profile/80/edit" class="btn btn-info btn-sm">Change address</a>
+                                    </td>
+                                </tr>
+                            </table>
+                                            </div>
+                </div>
+        </div>
+            <div class="col-12 col-md-6">
+                <div class="card mt-3 mt-md-0">
+    <h4 class="card-header">Your subscriptions</h4>
+    <div class="card-body">
+                    <div class="list-unstyled flex-column mb-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="https://members.capit.co.uk/subscriptions/130/complete">
+                        28
+                        -
+                        David McInnes
+                    </a>
+                    <button class="btn btn-info btn-sm" type="button" data-toggle="collapse" data-target="#collapse-28">Track progress</button>
+                </div>
+                <div class="collapse mt-2" id="collapse-28">
+                    <ul class="list-unstyled">
+
+                        <!-- 1. Signed -->
+                        <li class="text-dark">
+                            <i class="fas fa-check-square h3 align-middle mr-2 text-success"></i>
+                            <span>
+                                                                    Subscription  Agreement signed on 18 January 2022</span>
+                        </li>
+
+                        <!-- 2. Funds status -->
+                                                    <li class="text-dark">
+                                <i class="fas fa-check-square h3 align-middle mr-2 text-success"></i>
+                                <span>We have not received your Subscription Funds</span>
+                            </li>
+                        
+                        <!-- 3. Pending funds / final status -->
+                        
+                        <!-- 4. Certificate status -->
+                                                    <li class="text-dark">
+                                <i class="fas fa-check-square h3 align-middle mr-2 text-success"></i>
+                                <span>
+                                    Your subscription expired on 23 January 2022
+                                </span>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+                    <div class="list-unstyled flex-column mb-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="https://members.capit.co.uk/subscriptions/181/complete">
+                        33
+                        -
+                        David McInnes
+                    </a>
+                    <button class="btn btn-info btn-sm" type="button" data-toggle="collapse" data-target="#collapse-33">Track progress</button>
+                </div>
+                <div class="collapse mt-2" id="collapse-33">
+                    <ul class="list-unstyled">
+
+                        <!-- 1. Signed -->
+                        <li class="text-dark">
+                            <i class="fas fa-check-square h3 align-middle mr-2 text-success"></i>
+                            <span>
+                                                                    Subscription  Agreement signed on 4 February 2022</span>
+                        </li>
+
+                        <!-- 2. Funds status -->
+                                                    <li class="text-dark">
+                                <i class="fas fa-check-square h3 align-middle mr-2 text-success"></i>
+                                <span>We have not received your Subscription Funds</span>
+                            </li>
+                        
+                        <!-- 3. Pending funds / final status -->
+                        
+                        <!-- 4. Certificate status -->
+                                                    <li class="text-dark">
+                                <i class="fas fa-check-square h3 align-middle mr-2 text-success"></i>
+                                <span>
+                                    Your subscription expired on 9 February 2022
+                                </span>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+                    <div class="list-unstyled flex-column mb-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="https://members.capit.co.uk/subscriptions/194/complete">
+                        34
+                        -
+                        BOCIOC M LIMITED
+                    </a>
+                    <button class="btn btn-info btn-sm" type="button" data-toggle="collapse" data-target="#collapse-34">Track progress</button>
+                </div>
+                <div class="collapse mt-2" id="collapse-34">
+                    <ul class="list-unstyled">
+
+                        <!-- 1. Signed -->
+                        <li class="text-dark">
+                            <i class="fas fa-check-square h3 align-middle mr-2 text-success"></i>
+                            <span>
+                                                                    Subscription  Agreement signed on 9 February 2022</span>
+                        </li>
+
+                        <!-- 2. Funds status -->
+                                                    <li class="text-dark">
+                                <i class="fas fa-check-square h3 align-middle mr-2 text-success"></i>
+                                <span>We have not received your Subscription Funds</span>
+                            </li>
+                        
+                        <!-- 3. Pending funds / final status -->
+                        
+                        <!-- 4. Certificate status -->
+                                                    <li class="text-dark">
+                                <i class="fas fa-check-square h3 align-middle mr-2 text-success"></i>
+                                <span>
+                                    Your subscription expired on 14 February 2022
+                                </span>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            </div>
+</div>
+                <div class="card mt-3">
+                    <h4 class="card-header">Your certificates</h4>
+                    <div class="card-body">
+                                                    Your certificates will appear here when they are issued.
+                                            </div>
+                </div>
+            </div>
+    </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
