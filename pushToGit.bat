@@ -1,3 +1,4 @@
+pushd %~dp0
 @echo on
 cd G:\My Drive\GITHUB\davidcapit.github.io
 git pull
