@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = new google.visualization.DataTable();
+data.addColumn('datetime', 'Time');
+data.addColumn('number', 'Cap-It Index');
+data.addRows([
+[new Date(2022,1,28, 00, 00, 00), 1000],
+[new Date(2022,1,28, 01, 00, 00), 5000],
+[new Date(2022,1,28, 20, 00, 00), 1000]
+]);
+var date_formatter = new google.visualization.DateFormat({
+pattern: "dd MMM yyyy hh:mm"
+});
+date_formatter.format(data, 0);
+var high = ((data.getColumnRange(1).max));
+var low = (data.getColumnRange(1).min);
+var dif = high-low;
+var trail_percent = 0.1;
+var trail = (trail_percent*dif);
+var min_trail = 1
+var min_y = 0;
+trail = Math.max.apply(null, [trail,min_trail]);
+var max_price = high + trail;
+var min_price = low - trail;
+min_price = Math.max.apply(null, [min_price, min_y]);
+var options = {
+title: '1D',
+areaOpacity: 0.5,
+focusTarget: 'category',
+animation: {startup: true, duration: 100,easing: 'in'},
+crosshair: {trigger: 'both', orientation: 'vertical', opacity: 1, color : 'fcb247' },
+tooltip:{trigger:'both'},
+series: {0:{color: '#0173a3', visibleInLegend: false}},
+legend: {position: 'none'},
+hAxis: {title: '',
+format: 'HH:00',
+gridlines:{count : 4, color:'FFFFFF'}},
+vAxis: {minValue: min_price, maxValue: max_price,
+gridlines:{count : 4},minorGridlines:{interval:0}}};
+var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+chart.draw(data, options);
+};
+$(window).resize(function() {
+if(this.resizeTO) clearTimeout(this.resizeTO);
+this.resizeTO = setTimeout(function() {
+$(this).trigger('resizeEnd');
+}, 100);
+});
+$(window).on('resizeEnd', function() {
+drawChart();
+});
+</script>
+</head>
+<body>
+<div id="chart_div" style="width: 100vw; height: 100vh;"></div>
+</body>
+</html>
