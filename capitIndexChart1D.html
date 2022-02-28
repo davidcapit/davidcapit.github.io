@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+margin: auto;
+width: 320px;
+padding: 0px;
+}
+.table{
+width:100%;
+}
+.rightTextAlign{
+text-align: right;
+}
+.leftTextAlign{
+text-align: left;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = new google.visualization.DataTable();
+data.addColumn('datetime', 'Time');
+data.addColumn('number', 'Cap-It Index');
+data.addRows([
+[new Date(2022,1,17,11,30,0),500.63],
+[new Date(2022,1,17,11,45,0),502.77],
+[new Date(2022,1,17,12,0,0),502.1],
+[new Date(2022,1,17,12,15,0),501.63],
+[new Date(2022,1,17,12,30,0),500.84],
+[new Date(2022,1,17,12,45,0),500.29],
+[new Date(2022,1,17,13,0,0),500.88],
+[new Date(2022,1,17,13,15,0),500.71],
+[new Date(2022,1,17,13,30,0),501.01],
+[new Date(2022,1,17,13,45,0),498.54],
+[new Date(2022,1,17,14,0,0),497.32],
+[new Date(2022,1,17,14,15,0),503.81],
+[new Date(2022,1,17,14,30,0),502.56],
+[new Date(2022,1,17,14,45,0),499.97],
+[new Date(2022,1,17,15,0,0),492.7],
+[new Date(2022,1,17,15,15,0),494.18],
+[new Date(2022,1,17,15,30,0),496.98],
+[new Date(2022,1,17,15,45,0),500.05],
+[new Date(2022,1,17,16,0,0),497.97],
+[new Date(2022,1,17,16,15,0),498.23],
+[new Date(2022,1,17,16,30,0),500.14],
+[new Date(2022,1,17,16,45,0),498.03],
+[new Date(2022,1,17,17,0,0),499.47],
+[new Date(2022,1,17,17,15,0),501.39],
+[new Date(2022,1,17,17,30,0),501.46],
+[new Date(2022,1,17,17,45,0),501.27],
+[new Date(2022,1,17,18,0,0),501.48],
+[new Date(2022,1,17,19,0,0),501.34],
+[new Date(2022,1,17,20,0,0),501.34],
+[new Date(2022,1,17,21,0,0),501.34],
+[new Date(2022,1,17,22,0,0),501.34],
+[new Date(2022,1,17,23,0,0),501.34],
+[new Date(2022,1,18,0,0,0),501.85],
+[new Date(2022,1,18,1,0,0),501.85],
+[new Date(2022,1,18,2,0,0),501.85],
+[new Date(2022,1,18,3,0,0),501.85],
+[new Date(2022,1,18,4,0,0),501.85],
+[new Date(2022,1,18,5,0,0),501.85],
+[new Date(2022,1,18,6,0,0),501.85],
+[new Date(2022,1,18,7,0,0),501.85],
+[new Date(2022,1,18,7,15,0),501.85],
+[new Date(2022,1,18,7,30,0),504.04],
+[new Date(2022,1,18,7,45,0),502.08],
+[new Date(2022,1,18,8,0,0),501.62],
+[new Date(2022,1,18,8,15,0),501.99],
+[new Date(2022,1,18,8,30,0),500.73],
+[new Date(2022,1,18,8,45,0),501.81],
+[new Date(2022,1,18,9,0,0),496.27],
+[new Date(2022,1,18,9,15,0),492.55],
+[new Date(2022,1,18,9,30,0),491.68],
+[new Date(2022,1,18,9,45,0),488.1],
+[new Date(2022,1,18,10,0,0),485.19],
+[new Date(2022,1,18,10,15,0),488.68],
+[new Date(2022,1,18,10,30,0),486.65],
+[new Date(2022,1,18,10,45,0),486.7],
+[new Date(2022,1,18,11,0,0),486.95],
+[new Date(2022,1,18,11,0,0),486.95]
+]);
+var date_formatter = new google.visualization.DateFormat({
+pattern: "dd MMMM yyyy HH:mm"
+});
+date_formatter.format(data, 0);
+var high = ((data.getColumnRange(1).max));
+var low = (data.getColumnRange(1).min);
+var dif = high-low;
+var trail_percent = 0.1;
+var trail = (trail_percent*dif);
+var min_trail = 1
+var min_y = 0;
+trail = Math.max.apply(null, [trail,min_trail]);
+var max_price = high + trail;
+var min_price = low - trail;
+min_price = Math.max.apply(null, [min_price, min_y]);
+var options = {
+title: '1D',
+areaOpacity: 0.5,
+focusTarget: 'category',
+animation: {startup: true, duration: 100,easing: 'in'},
+crosshair: {trigger: 'both', orientation: 'vertical', opacity: 1, color : '#fcb247' },
+tooltip:{trigger:'both'},
+series: {0:{color: '#0173a3', visibleInLegend: false}},
+legend: {position: 'none'},
+hAxis: {title: '',
+format: 'HH:00',
+gridlines:{count : 4, color:'FFFFFF'}},
+vAxis: {minValue: min_price, maxValue: max_price,
+gridlines:{count : 4},minorGridlines:{interval:0}}};
+var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+chart.draw(data, options);
+};
+$(window).resize(function() {
+if(this.resizeTO) clearTimeout(this.resizeTO);
+this.resizeTO = setTimeout(function() {
+$(this).trigger('resizeEnd');
+}, 100);
+});
+$(window).on('resizeEnd', function() {
+drawChart();
+});
+</script>
+</head>
+<body>
+<div id="chart_div" style="width: 100vw; height: 50vh;"></div>
+<div class = "center">
+<table class="table">
+<tbody>
+<tr>
+<td class = "rightTextAlign">Latest:</td>
+<td>xxx.x   </td>
+<td class = "leftTextAlign">28 February 2022 14:30</td>
+</tr>
+<tr>
+<td class = "rightTextAlign">High:</td>
+<td>xxx.x</td>
+<td class = "leftTextAlign">28 February 2022 14:30</td>
+</tr>
+<tr>
+<td class = "rightTextAlign">Low:</td>
+<td>xxx.x</td>
+<td class = "leftTextAlign">28 February 2022 14:30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
