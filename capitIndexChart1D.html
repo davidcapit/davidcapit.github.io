@@ -16,6 +16,11 @@ text-align: right;
 .leftTextAlign{
 text-align: left;
 }
+#chart_div{
+margin: auto;
+width: 100%;
+padding: 0px;
+}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -102,6 +107,7 @@ var min_price = low - trail;
 min_price = Math.max.apply(null, [min_price, min_y]);
 var options = {
 title: '1D',
+chartArea: {'width': '85%', 'height': '60%'},
 areaOpacity: 0.5,
 focusTarget: 'category',
 animation: {startup: true, duration: 100,easing: 'in'},
@@ -129,7 +135,7 @@ drawChart();
 </script>
 </head>
 <body>
-<div id="chart_div" style="width: 100vw; height: 50vh;"></div>
+<div id="chart_div"></div>
 <div class = "center">
 <table class="table">
 <tbody>
