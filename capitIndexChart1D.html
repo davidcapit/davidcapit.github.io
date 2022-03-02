@@ -37,7 +37,6 @@ var data = new google.visualization.DataTable();
 data.addColumn('datetime', 'Time');
 data.addColumn('number', 'Cap-It Index');
 data.addRows([
-[new Date(2022,2,1,7,30,0),463.82],
 [new Date(2022,2,1,7,45,0),464.69],
 [new Date(2022,2,1,8,0,0),461.65],
 [new Date(2022,2,1,8,15,0),457.01],
@@ -93,7 +92,8 @@ data.addRows([
 [new Date(2022,2,2,5,0,0),399.82],
 [new Date(2022,2,2,6,0,0),399.82],
 [new Date(2022,2,2,7,0,0),399.82],
-[new Date(2022,2,2,7,0,0),399.82]
+[new Date(2022,2,2,7,15,0),399.82],
+[new Date(2022,2,2,7,15,0),399.82]
 ]);
 var date_formatter = new google.visualization.DateFormat({
 pattern: "dd MMMM yyyy HH:mm"
@@ -146,8 +146,8 @@ drawChart();
 <tbody>
 <tr>
 <td class = "rightTextAlign">Latest:</td>
-<td>399.8</td>
-<td class = "leftTextAlign">02 March 2022 07:15</td>
+<td>407.8</td>
+<td class = "leftTextAlign">02 March 2022 07:30</td>
 </tr>
 <tr>
 <td class = "rightTextAlign">High:</td>
