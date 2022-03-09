@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+table.GeneratedTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  padding: 3px;
+}
+
+table.GeneratedTable thead {
+  background-color: #0173a3;
+  color:white;
+}
+
+.label{
+text-align: left;
+}
+.value{
+text-align: left;
+}
+.slider{
+width:100%;
+}
+</style>
+</head>
+
+<body>
+<table class="GeneratedTable">
+  <colgroup>
+       <col span="1" style="width: 50%;">
+       <col span="1" style="width: 50%;">
+  </colgroup>
+  <thead>
+    <tr>
+      <th colspan="2">Annual Income From Cap-It Certificate</th> 
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class = "label" colspan="2">Amount protected</td> 
+    </tr>
+    <tr>
+      <td class = "input"><input type="range" min="100000" max="5000000" step="50000" value="250000" class="slider" id="amount-protected-slider"></td>
+      <td class = "value" id="amount-protected-input-display">value</td>  
+    </tr>
+    <tr>
+      <td class = "label" colspan="2">Benchmark interest rate</td> 
+    </tr>
+    <tr>
+      <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="benchmark-interest-rate-slider"></td>
+      <td class = "value" id="benchmark-interest-rate-input-display">value</td>  
+    </tr>
+    <tr>
+      <td class = "label" colspan="2">Cap rate</td> 
+    </tr>
+    <tr>
+      <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="cap-rate-slider"></td>
+      <td class = "value" id="cap-rate-input-display">value</td>  
+    </tr>
+    <tr>
+      <td class = "label" colspan="2">Annual income</td> 
+    </tr>
+    <tr>
+      <td class = "output" colspan="2" id="annual-income-output">value</td>  
+    </tr>
+  </tbody>
+</table>
+<script>
+function calIncome(){
+var income = document.getElementById("amount-protected-slider").value*(document.getElementById("benchmark-interest-rate-slider").value-document.getElementById("cap-rate-slider").value)/10000;
+if (income < 0) {
+	income = 0;
+}
+document.getElementById("annual-income-output").innerHTML = income;
+}
+document.getElementById("amount-protected-slider").value = 250000;
+document.getElementById("benchmark-interest-rate-slider").value = 100;
+document.getElementById("cap-rate-slider").value = 100;
+
+
+
+document.getElementById("amount-protected-input-display").innerHTML = document.getElementById("amount-protected-slider").value;
+document.getElementById("amount-protected-slider").oninput = function() {
+document.getElementById("amount-protected-input-display").innerHTML = this.value;
+calIncome();
+}
+
+document.getElementById("benchmark-interest-rate-input-display").innerHTML = document.getElementById("benchmark-interest-rate-slider").value/100;
+document.getElementById("benchmark-interest-rate-slider").oninput = function() {
+document.getElementById("benchmark-interest-rate-input-display").innerHTML = this.value/100;
+calIncome();
+}
+
+document.getElementById("cap-rate-input-display").innerHTML = document.getElementById("cap-rate-slider").value/100;
+document.getElementById("cap-rate-slider").oninput = function() {
+document.getElementById("cap-rate-input-display").innerHTML = this.value/100;
+calIncome();
+}
+
+
+
+
+</script>
+</body>
+
+
+</html>
