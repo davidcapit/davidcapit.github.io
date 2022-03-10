@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -70,7 +71,7 @@ width:100%;
       <td class = "label" colspan="2">Annual income</td> 
     </tr>
     <tr>
-      <td class = "output" colspan="2" id="annual-income-output">£0.00</td>  
+      <td class = "output" colspan="2" id="annual-income-output">£0</td>  
     </tr>
   </tbody>
 </table>
@@ -83,6 +84,8 @@ if (income < 0) {
 document.getElementById("annual-income-output").textContent=(income).toLocaleString('en-UK', {
   style: 'currency',
   currency: 'GBP',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
 });
 }
 
