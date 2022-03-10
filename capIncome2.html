@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+@media only screen and (max-width:500px){
+table.GeneratedTable td,table.GeneratedTable th {
+font-size:9.5vw;
+border-width: 2px;
+padding: 3px;
+}}
+
+@media only screen and (min-width:500px){
+table.GeneratedTable td,table.GeneratedTable th {
+font-size:40px;
+border-width: 2px;
+padding: 3px;
+}}
+
+table.GeneratedTable {
+  width: 100%;
+  max-width:1000px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.GeneratedTable thead {
+  background-color: #0173a3;
+  color:white;
+}
+
+.label,.value{
+text-align: left;
+}
+.output{
+color:green;
+font-weight:bold;
+}
+.slider{
+width:100%;
+}
+</style>
+</head>
+
+<body onload="calIncome()">
+<table class="GeneratedTable">
+  <colgroup>
+       <col span="1" style="width: 70%;">
+       <col span="1" style="width: 30%;">
+  </colgroup>
+  <thead>
+    <tr>
+      <th colspan="2">Cap Income Calculator</th> 
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class = "label" colspan="2">Amount protected</td> 
+    </tr>
+    <tr>
+      <td class = "input"><input type="range" min="100000" max="5000000" step="50000" value="250000" class="slider" id="amount-protected-slider"></td>
+      <td class = "value" id="amount-protected-input-display">£250000</td>  
+    </tr>
+   <tr>
+      <td class = "label" colspan="2">Cap rate</td> 
+    </tr>
+    <tr>
+      <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="cap-rate-slider"></td>
+      <td class = "value" id="cap-rate-input-display">1%</td>  
+    </tr> 
+    <tr>
+      <td class = "label" colspan="2">Benchmark interest rate</td> 
+    </tr>
+    <tr>
+      <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="benchmark-interest-rate-slider"></td>
+      <td class = "value" id="benchmark-interest-rate-input-display">1%</td>  
+    </tr>
+    <tr>
+      <td class = "label" colspan="2">Annual income</td> 
+    </tr>
+    <tr>
+      <td class = "output" colspan="2" id="annual-income-output">£0</td>  
+    </tr>
+  </tbody>
+</table>
+<script>
+function calIncome(){
+var income = document.getElementById("amount-protected-slider").value*(document.getElementById("benchmark-interest-rate-slider").value-document.getElementById("cap-rate-slider").value)/10000;
+if (income < 0) {
+	income = 0;
+}
+document.getElementById("annual-income-output").textContent=(income).toLocaleString('en-UK', {
+  style: 'currency',
+  currency: 'GBP',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+});
+}
+
+document.getElementById("amount-protected-slider").value =250000;
+document.getElementById("benchmark-interest-rate-slider").value = 100;
+document.getElementById("cap-rate-slider").value = 100;
+
+
+document.getElementById("amount-protected-input-display").textContent = (document.getElementById("amount-protected-slider").value*1.00).toLocaleString('en-UK', {
+  style: 'currency',
+  currency: 'GBP',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+});
+document.getElementById("amount-protected-slider").oninput = function() {
+
+document.getElementById("amount-protected-input-display").textContent = (document.getElementById("amount-protected-slider").value*1.00).toLocaleString('en-UK', {
+  style: 'currency',
+  currency: 'GBP',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+});
+calIncome();
+}
+
+document.getElementById("benchmark-interest-rate-input-display").textContent = document.getElementById("benchmark-interest-rate-slider").value/100+"%";
+document.getElementById("benchmark-interest-rate-slider").oninput = function() {
+document.getElementById("benchmark-interest-rate-input-display").innerHTML = this.value/100+"%";
+calIncome();
+}
+
+document.getElementById("cap-rate-input-display").textContent = document.getElementById("cap-rate-slider").value/100+"%";
+document.getElementById("cap-rate-slider").oninput = function() {
+document.getElementById("cap-rate-input-display").textContent = this.value/100+"%";
+calIncome();
+}
+
+
+
+
+</script>
+</body>
+
+
+</html>
