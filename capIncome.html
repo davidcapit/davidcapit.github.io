@@ -9,6 +9,7 @@ table.GeneratedTable {
 }
 
 table.GeneratedTable td, table.GeneratedTable th {
+  font-size: 20px;
   border-width: 2px;
   padding: 3px;
 }
@@ -18,11 +19,13 @@ table.GeneratedTable thead {
   color:white;
 }
 
-.label{
+.label,.value{
 text-align: left;
 }
-.value{
-text-align: left;
+.output{
+font-size:25px;
+color:green;
+font-weight:bold;
 }
 .slider{
 width:100%;
@@ -67,7 +70,7 @@ width:100%;
       <td class = "label" colspan="2">Annual income</td> 
     </tr>
     <tr>
-      <td class = "output" colspan="2" id="annual-income-output">value</td>  
+      <td class = "output" colspan="2" id="annual-income-output">£0.00</td>  
     </tr>
   </tbody>
 </table>
@@ -77,7 +80,10 @@ var income = document.getElementById("amount-protected-slider").value*(document.
 if (income < 0) {
 	income = 0;
 }
-document.getElementById("annual-income-output").textContent="£" + income;
+document.getElementById("annual-income-output").textContent=(income).toLocaleString('en-UK', {
+  style: 'currency',
+  currency: 'GBP',
+});
 }
 
 document.getElementById("amount-protected-slider").value =250000;
@@ -86,7 +92,10 @@ document.getElementById("cap-rate-slider").value = 100;
 
 
 
-document.getElementById("amount-protected-input-display").textContent ="£"+ document.getElementById("amount-protected-slider").value;
+document.getElementById("amount-protected-input-display").textContent = document.getElementById("amount-protected-slider").value.toLocaleString('en-UK', {
+  style: 'currency',
+  currency: 'GBP',
+});
 document.getElementById("amount-protected-slider").oninput = function() {
 document.getElementById("amount-protected-input-display").textContent = "£"+this.value;
 calIncome();
