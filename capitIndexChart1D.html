@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 <style>
 body{
 background-color:#0173a3;
-font-family:'Nunito';
 }
 .center {
 margin: auto;
@@ -39,7 +37,6 @@ var data = new google.visualization.DataTable();
 data.addColumn('datetime', 'Time');
 data.addColumn('number', 'Cap-It Index');
 data.addRows([
-[new Date(2022,2,9,16,0,0),584.97],
 [new Date(2022,2,9,16,15,0),581.11],
 [new Date(2022,2,9,16,30,0),575.18],
 [new Date(2022,2,9,16,45,0),579.32],
@@ -95,7 +92,8 @@ data.addRows([
 [new Date(2022,2,10,15,0,0),573.88],
 [new Date(2022,2,10,15,15,0),577.79],
 [new Date(2022,2,10,15,30,0),580.03],
-[new Date(2022,2,10,15,30,0),580.03]
+[new Date(2022,2,10,15,45,0),578.18],
+[new Date(2022,2,10,15,45,0),578.18]
 ]);
 var date_formatter = new google.visualization.DateFormat({
 pattern: "dd MMMM yyyy HH:mm"
@@ -148,13 +146,13 @@ drawChart();
 <tbody>
 <tr>
 <td class = "rightTextAlign">Latest:</td>
-<td>578.2</td>
-<td class = "leftTextAlign">10 March 2022 15:45</td>
+<td>572.3</td>
+<td class = "leftTextAlign">10 March 2022 16:00</td>
 </tr>
 <tr>
 <td class = "rightTextAlign">High:</td>
-<td>585</td>
-<td class = "leftTextAlign">09 March 2022 16:00</td>
+<td>583.2</td>
+<td class = "leftTextAlign">10 March 2022 13:00</td>
 </tr>
 <tr>
 <td class = "rightTextAlign">Low:</td>
