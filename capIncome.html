@@ -4,6 +4,28 @@
 
 <head>
 <style>
+
+@media only screen and (max-width:315px) {
+table.GeneratedTable td,table.GeneratedTable th {
+font-size:25px;
+border-width: 2px;
+padding: 3px;
+}}
+
+@media only screen and (min-width:315px) and (max-width: 360px) {
+table.GeneratedTable td,table.GeneratedTable th {
+font-size:30px;
+border-width: 2px;
+padding: 3px;
+}}
+
+@media only screen and (min-width:360px) and (max-width: 420px) {
+table.GeneratedTable td,table.GeneratedTable th {
+font-size:35px;
+border-width: 2px;
+padding: 3px;
+}}
+
 table.GeneratedTable {
   width: 100%;
   max-width:1000px;
@@ -12,11 +34,12 @@ table.GeneratedTable {
   margin-right: auto;
 }
 
+@media only screen and (min-width: 420px) {
 table.GeneratedTable td, table.GeneratedTable th {
   font-size: 40px;
   border-width: 2px;
   padding: 3px;
-}
+}}
 
 table.GeneratedTable thead {
   background-color: #0173a3;
@@ -55,19 +78,19 @@ width:100%;
       <td class = "input"><input type="range" min="100000" max="5000000" step="50000" value="250000" class="slider" id="amount-protected-slider"></td>
       <td class = "value" id="amount-protected-input-display">£250000</td>  
     </tr>
+   <tr>
+      <td class = "label" colspan="2">Cap rate</td> 
+    </tr>
+    <tr>
+      <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="cap-rate-slider"></td>
+      <td class = "value" id="cap-rate-input-display">1%</td>  
+    </tr> 
     <tr>
       <td class = "label" colspan="2">Benchmark interest rate</td> 
     </tr>
     <tr>
       <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="benchmark-interest-rate-slider"></td>
       <td class = "value" id="benchmark-interest-rate-input-display">1%</td>  
-    </tr>
-    <tr>
-      <td class = "label" colspan="2">Cap rate</td> 
-    </tr>
-    <tr>
-      <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="cap-rate-slider"></td>
-      <td class = "value" id="cap-rate-input-display">1%</td>  
     </tr>
     <tr>
       <td class = "label" colspan="2">Annual income</td> 
