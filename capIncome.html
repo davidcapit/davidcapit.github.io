@@ -50,21 +50,21 @@ width:100%;
     </tr>
     <tr>
       <td class = "input"><input type="range" min="100000" max="5000000" step="50000" value="250000" class="slider" id="amount-protected-slider"></td>
-      <td class = "value" id="amount-protected-input-display">value</td>  
+      <td class = "value" id="amount-protected-input-display">£250000</td>  
     </tr>
     <tr>
       <td class = "label" colspan="2">Benchmark interest rate</td> 
     </tr>
     <tr>
       <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="benchmark-interest-rate-slider"></td>
-      <td class = "value" id="benchmark-interest-rate-input-display">value</td>  
+      <td class = "value" id="benchmark-interest-rate-input-display">1%</td>  
     </tr>
     <tr>
       <td class = "label" colspan="2">Cap rate</td> 
     </tr>
     <tr>
       <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="cap-rate-slider"></td>
-      <td class = "value" id="cap-rate-input-display">value</td>  
+      <td class = "value" id="cap-rate-input-display">1%</td>  
     </tr>
     <tr>
       <td class = "label" colspan="2">Annual income</td> 
@@ -91,13 +91,20 @@ document.getElementById("benchmark-interest-rate-slider").value = 100;
 document.getElementById("cap-rate-slider").value = 100;
 
 
-
-document.getElementById("amount-protected-input-display").textContent = document.getElementById("amount-protected-slider").value.toLocaleString('en-UK', {
+document.getElementById("amount-protected-input-display").textContent = (document.getElementById("amount-protected-slider").value*1.00).toLocaleString('en-UK', {
   style: 'currency',
   currency: 'GBP',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
 });
 document.getElementById("amount-protected-slider").oninput = function() {
-document.getElementById("amount-protected-input-display").textContent = "£"+this.value;
+
+document.getElementById("amount-protected-input-display").textContent = (document.getElementById("amount-protected-slider").value*1.00).toLocaleString('en-UK', {
+  style: 'currency',
+  currency: 'GBP',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+});
 calIncome();
 }
 
