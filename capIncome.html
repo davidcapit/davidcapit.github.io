@@ -1,45 +1,47 @@
 
+
 <!DOCTYPE html>
 <html>
 
 <head>
+<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+
 <style>
-
-@media only screen and (max-width:315px) {
+body{
+	background-color:white;
+    font-family:"Nunito";
+}
+@media only screen and (max-width:500px){
 table.GeneratedTable td,table.GeneratedTable th {
-font-size:25px;
+font-size:8vw;
 border-width: 2px;
-padding: 3px;
+}
+.input,.value{
+padding-bottom:25px;
+}
+.value{
+padding-left:25px;
 }}
 
-@media only screen and (min-width:315px) and (max-width: 360px) {
+@media only screen and (min-width:500px){
 table.GeneratedTable td,table.GeneratedTable th {
-font-size:30px;
+font-size:40px;
 border-width: 2px;
-padding: 3px;
+}
+.input,.value{
+padding-bottom:25px;
+}
+.value{
+padding-left:50px;
 }}
 
-@media only screen and (min-width:360px) and (max-width: 420px) {
-table.GeneratedTable td,table.GeneratedTable th {
-font-size:35px;
-border-width: 2px;
-padding: 3px;
-}}
 
 table.GeneratedTable {
   width: 100%;
   max-width:1000px;
-  border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
 }
-
-@media only screen and (min-width: 420px) {
-table.GeneratedTable td, table.GeneratedTable th {
-  font-size: 40px;
-  border-width: 2px;
-  padding: 3px;
-}}
 
 table.GeneratedTable thead {
   background-color: #0173a3;
@@ -55,7 +57,7 @@ font-weight:bold;
 }
 .slider{
 width:100%;
-}
+} 
 </style>
 </head>
 
@@ -65,31 +67,27 @@ width:100%;
        <col span="1" style="width: 70%;">
        <col span="1" style="width: 30%;">
   </colgroup>
-  <thead>
-    <tr>
-      <th colspan="2">Cap Income Calculator</th> 
-    </tr>
-  </thead>
+
   <tbody>
     <tr>
       <td class = "label" colspan="2">Amount protected</td> 
     </tr>
     <tr>
-      <td class = "input"><input type="range" min="100000" max="5000000" step="50000" value="250000" class="slider" id="amount-protected-slider"></td>
+      <td class="input"><input type="range" min="100000" max="5000000" step="50000" value="250000" class="slider" id="amount-protected-slider"></td>
       <td class = "value" id="amount-protected-input-display">£250000</td>  
     </tr>
    <tr>
       <td class = "label" colspan="2">Cap rate</td> 
     </tr>
     <tr>
-      <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="cap-rate-slider"></td>
+      <td class="input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="cap-rate-slider"></td>
       <td class = "value" id="cap-rate-input-display">1%</td>  
     </tr> 
     <tr>
       <td class = "label" colspan="2">Benchmark interest rate</td> 
     </tr>
     <tr>
-      <td class = "input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="benchmark-interest-rate-slider"></td>
+      <td class="input"><input type="range" min="0" max="1000" value="100" step="5" class="slider" id="benchmark-interest-rate-slider"></td>
       <td class = "value" id="benchmark-interest-rate-input-display">1%</td>  
     </tr>
     <tr>
