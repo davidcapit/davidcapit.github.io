@@ -39,7 +39,6 @@ var data = new google.visualization.DataTable();
 data.addColumn('datetime', 'Time');
 data.addColumn('number', 'Cap-It Index');
 data.addRows([
-[new Date(2022,2,21,16,15,0),575.87],
 [new Date(2022,2,21,16,30,0),578.66],
 [new Date(2022,2,21,16,45,0),584.44],
 [new Date(2022,2,21,17,0,0),587.95],
@@ -95,7 +94,8 @@ data.addRows([
 [new Date(2022,2,22,15,15,0),618.14],
 [new Date(2022,2,22,15,30,0),617.71],
 [new Date(2022,2,22,15,45,0),618.76],
-[new Date(2022,2,22,15,45,0),618.76]
+[new Date(2022,2,22,16,0,0),621.61],
+[new Date(2022,2,22,16,0,0),621.61]
 ]);
 var date_formatter = new google.visualization.DateFormat({
 pattern: "dd MMMM yyyy HH:mm"
@@ -148,18 +148,18 @@ drawChart();
 <tbody>
 <tr>
 <td class = "rightTextAlign">Latest:</td>
-<td id="latest-index">621.6</td>
-<td id="latest-date" class = "leftTextAlign">22 March 2022 16:00</td>
+<td id="latest-index">621.7</td>
+<td id="latest-date" class = "leftTextAlign">22 March 2022 16:15</td>
 </tr>
 <tr>
 <td class = "rightTextAlign">High:</td>
-<td id="high-index">621.6</td>
-<td id="high-date" class = "leftTextAlign">22 March 2022 16:00</td>
+<td id="high-index">621.7</td>
+<td id="high-date" class = "leftTextAlign">22 March 2022 16:15</td>
 </tr>
 <tr>
 <td class = "rightTextAlign">Low:</td>
-<td id="low-index">575.9</td>
-<td id="low-date" class = "leftTextAlign">21 March 2022 16:15</td>
+<td id="low-index">578.7</td>
+<td id="low-date" class = "leftTextAlign">21 March 2022 16:30</td>
 </tr>
 </tbody>
 </table>
