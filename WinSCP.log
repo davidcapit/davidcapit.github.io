@@ -41476,3 +41476,364 @@
 > 2022-03-30 02:02:51.663 Script: exit
 . 2022-03-30 02:02:51.664 Script: Exit code: 0
 . 2022-03-30 02:02:51.693 Disconnected from server
+. 2022-03-30 03:02:54.358 --------------------------------------------------------------------------
+. 2022-03-30 03:02:54.940 WinSCP Version 5.19.6 (Build 12002 2022-02-22) (OS 10.0.19043 - Windows 10 Enterprise)
+. 2022-03-30 03:02:54.940 Configuration: nul
+. 2022-03-30 03:02:54.941 Log level: Normal
+. 2022-03-30 03:02:54.941 Local account: TOYOTA\BOT
+. 2022-03-30 03:02:54.941 Working directory: G:\My Drive\GITHUB\davidcapit.github.io
+. 2022-03-30 03:02:54.941 Process ID: 6716
+. 2022-03-30 03:02:54.951 Ancestor processes: WinSCP, cmd, EXCEL, ...
+. 2022-03-30 03:02:54.952 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.19.6 /consoleinstance=_7836_312 "/log=G:\My Drive\GITHUB\davidcapit.github.io\WinSCP.log" "/ini=nul" "/command" "open ftpes://admin%40capit.co.uk:***@capit.co.uk/ -certificate=""a1:26:e4:59:10:b1:3b:be:9e:12:ec:ab:7d:fc:62:5c:9e:6a:37:f7:b9:03:74:3d:0f:49:22:82:6f:e6:a6:4e""" "lcd ""G:\My Drive\GITHUB\davidcapit.github.io""" "cd /webpages" "put capitIndexChart1D.html" "put capitIndexChart1M.html" "put capitIndexChart1W.html" "put capitIndexChart1Y.html" "put capitIndexChart5Y.html" "put capitIndexChartMAX.html" "put sample-table-1M.html" "put sample-table-2M.html" "put sample-table-3M.html" "put sample-table-4M.html" "put sample-table-5M.html" "put sample-table-250K.html" "put sample-table-500K.html" "exit"
+. 2022-03-30 03:02:54.952 Time zone: Current: GMT+1, Standard: GMT+0 (GMT Standard Time), DST: GMT+1 (GMT Summer Time), DST Start: 27/03/2022, DST End: 30/10/2022
+. 2022-03-30 03:02:54.953 Login time: 30 March 2022 03:02:54
+. 2022-03-30 03:02:54.953 --------------------------------------------------------------------------
+. 2022-03-30 03:02:54.953 Script: Retrospectively logging previous script records:
+> 2022-03-30 03:02:54.953 Script: open ftpes://admin%40capit.co.uk:***@capit.co.uk/ -certificate="a1:26:e4:59:10:b1:3b:be:9e:12:ec:ab:7d:fc:62:5c:9e:6a:37:f7:b9:03:74:3d:0f:49:22:82:6f:e6:a6:4e"
+. 2022-03-30 03:02:54.953 --------------------------------------------------------------------------
+. 2022-03-30 03:02:54.953 Session name: admin@capit.co.uk@capit.co.uk (Ad-Hoc site)
+. 2022-03-30 03:02:54.954 Host name: capit.co.uk (Port: 21)
+. 2022-03-30 03:02:54.954 User name: admin@capit.co.uk (Password: Yes, Key file: No, Passphrase: No)
+. 2022-03-30 03:02:54.955 Transfer Protocol: FTP
+. 2022-03-30 03:02:54.955 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2022-03-30 03:02:54.955 Disable Nagle: No
+. 2022-03-30 03:02:54.956 Proxy: None
+. 2022-03-30 03:02:54.956 Send buffer: 262144
+. 2022-03-30 03:02:54.956 UTF: Auto
+. 2022-03-30 03:02:54.956 FTPS: Explicit TLS/SSL [Client certificate: No]
+. 2022-03-30 03:02:54.956 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2022-03-30 03:02:54.956 Session reuse: Yes
+. 2022-03-30 03:02:54.957 TLS/SSL versions: TLSv1.0-TLSv1.3
+. 2022-03-30 03:02:54.957 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2022-03-30 03:02:54.957 Cache directory changes: Yes, Permanent: Yes
+. 2022-03-30 03:02:54.957 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2022-03-30 03:02:54.957 Timezone offset: 0h 0m
+. 2022-03-30 03:02:54.957 --------------------------------------------------------------------------
+< 2022-03-30 03:02:54.961 Script: Connecting to capit.co.uk ...
+. 2022-03-30 03:02:54.961 Connecting to capit.co.uk ...
+. 2022-03-30 03:02:55.013 Connected with capit.co.uk, negotiating TLS connection...
+< 2022-03-30 03:02:55.036 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2022-03-30 03:02:55.036 220-You are user number 2 of 50 allowed.
+< 2022-03-30 03:02:55.037 220-Local time is now 03:02. Server port: 21.
+< 2022-03-30 03:02:55.037 220-This is a private system - No anonymous login
+< 2022-03-30 03:02:55.037 220-IPv6 connections are also welcome on this server.
+< 2022-03-30 03:02:55.037 220 You will be disconnected after 15 minutes of inactivity.
+> 2022-03-30 03:02:55.037 AUTH TLS
+< 2022-03-30 03:02:55.055 234 AUTH TLS OK.
+. 2022-03-30 03:02:55.144 Verifying certificate for "" with fingerprint a1:26:e4:59:10:b1:3b:be:9e:12:ec:ab:7d:fc:62:5c:9e:6a:37:f7:b9:03:74:3d:0f:49:22:82:6f:e6:a6:4e and 20 failures
+. 2022-03-30 03:02:55.144 Certificate for "" matches configured fingerprint
+. 2022-03-30 03:02:55.144 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+< 2022-03-30 03:02:55.144 Script: TLS connection established. Waiting for welcome message...
+. 2022-03-30 03:02:55.146 TLS connection established. Waiting for welcome message...
+> 2022-03-30 03:02:55.147 USER admin@capit.co.uk
+< 2022-03-30 03:02:55.181 331 User admin@capit.co.uk OK. Password required
+> 2022-03-30 03:02:55.182 PASS ******************
+< 2022-03-30 03:02:55.280 230 OK. Current restricted directory is /
+> 2022-03-30 03:02:55.280 SYST
+< 2022-03-30 03:02:55.314 215 UNIX Type: L8
+> 2022-03-30 03:02:55.314 FEAT
+< 2022-03-30 03:02:55.336 211-Extensions supported:
+< 2022-03-30 03:02:55.336  UTF8
+< 2022-03-30 03:02:55.336  EPRT
+< 2022-03-30 03:02:55.336  IDLE
+< 2022-03-30 03:02:55.337  MDTM
+< 2022-03-30 03:02:55.337  SIZE
+< 2022-03-30 03:02:55.337  MFMT
+< 2022-03-30 03:02:55.337  REST STREAM
+< 2022-03-30 03:02:55.337  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2022-03-30 03:02:55.337  MLSD
+< 2022-03-30 03:02:55.337  PRET
+< 2022-03-30 03:02:55.338  AUTH TLS
+< 2022-03-30 03:02:55.338  PBSZ
+< 2022-03-30 03:02:55.338  PROT
+< 2022-03-30 03:02:55.338  TVFS
+< 2022-03-30 03:02:55.338  ESTA
+< 2022-03-30 03:02:55.339  PASV
+< 2022-03-30 03:02:55.339  EPSV
+< 2022-03-30 03:02:55.339  SPSV
+< 2022-03-30 03:02:55.339  ESTP
+< 2022-03-30 03:02:55.339 211 End.
+> 2022-03-30 03:02:55.340 OPTS UTF8 ON
+< 2022-03-30 03:02:55.361 504 Unknown command
+> 2022-03-30 03:02:55.361 PBSZ 0
+< 2022-03-30 03:02:55.388 200 PBSZ=0
+> 2022-03-30 03:02:55.388 PROT P
+< 2022-03-30 03:02:55.409 200 Data protection level set to "private"
+< 2022-03-30 03:02:55.410 Script: Connected
+. 2022-03-30 03:02:55.410 Connected
+. 2022-03-30 03:02:55.410 --------------------------------------------------------------------------
+. 2022-03-30 03:02:55.411 Using FTP protocol.
+. 2022-03-30 03:02:55.412 Doing startup conversation with host.
+< 2022-03-30 03:02:55.412 Script: Starting the session...
+> 2022-03-30 03:02:55.413 PWD
+< 2022-03-30 03:02:55.436 257 "/" is your current location
+. 2022-03-30 03:02:55.437 Getting current directory name.
+. 2022-03-30 03:02:55.437 Startup conversation with host finished.
+< 2022-03-30 03:02:55.437 Script: Session started.
+< 2022-03-30 03:02:55.437 Script: Active session: [1] admin@capit.co.uk@capit.co.uk
+> 2022-03-30 03:02:55.438 Script: lcd "G:\My Drive\GITHUB\davidcapit.github.io"
+< 2022-03-30 03:02:55.438 Script: G:\My Drive\GITHUB\davidcapit.github.io
+> 2022-03-30 03:02:55.438 Script: cd /webpages
+. 2022-03-30 03:02:55.438 Changing directory to "/webpages".
+> 2022-03-30 03:02:55.439 CWD /webpages
+< 2022-03-30 03:02:55.468 250 OK. Current directory is /webpages
+. 2022-03-30 03:02:55.468 Getting current directory name.
+> 2022-03-30 03:02:55.468 PWD
+< 2022-03-30 03:02:55.516 257 "/webpages" is your current location
+< 2022-03-30 03:02:55.516 Script: /webpages
+> 2022-03-30 03:02:55.517 Script: put capitIndexChart1D.html
+. 2022-03-30 03:02:55.520 Copying 1 files/directories to remote directory "/webpages" - total size: 5,143
+. 2022-03-30 03:02:55.521   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-30 03:02:55.522   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-30 03:02:55.522   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-30 03:02:55.523 File: 'capitIndexChart1D.html' [2022-03-30T02:02:51.187Z] [5143]
+. 2022-03-30 03:02:55.525 Copying "capitIndexChart1D.html" to remote directory started.
+. 2022-03-30 03:02:55.526 Binary transfer mode selected.
+. 2022-03-30 03:02:55.526 Starting upload of G:\My Drive\GITHUB\davidcapit.github.io\capitIndexChart1D.html
+> 2022-03-30 03:02:55.526 TYPE I
+< 2022-03-30 03:02:55.573 200 TYPE is now 8-bit binary
+> 2022-03-30 03:02:55.574 PASV
+< 2022-03-30 03:02:55.620 227 Entering Passive Mode (89,200,136,154,117,94)
+> 2022-03-30 03:02:55.621 STOR capitIndexChart1D.html
+. 2022-03-30 03:02:55.621 Connecting to 89.200.136.154:30046 ...
+< 2022-03-30 03:02:55.672 150 Accepted data connection
+. 2022-03-30 03:02:55.695 Session ID reused
+. 2022-03-30 03:02:55.695 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+. 2022-03-30 03:02:55.695 TLS connection established
+< 2022-03-30 03:02:55.717 226-File successfully transferred
+< 2022-03-30 03:02:55.718 226 0.007 seconds (measured here), 0.69 Mbytes per second
+> 2022-03-30 03:02:55.718 MFMT 20220330020251 capitIndexChart1D.html
+< 2022-03-30 03:02:55.742 213 UTIME OK
+. 2022-03-30 03:02:55.742 Upload successful
+. 2022-03-30 03:02:55.743 Transfer done: 'capitIndexChart1D.html' => '/webpages/capitIndexChart1D.html' [5143]
+. 2022-03-30 03:02:55.744 Copying finished: Transferred: 5,143, Elapsed: 0:00:00, CPS: 82,951/s
+> 2022-03-30 03:02:55.744 Script: put capitIndexChart1M.html
+. 2022-03-30 03:02:55.746 Copying 1 files/directories to remote directory "/webpages" - total size: 40,796
+. 2022-03-30 03:02:55.746   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-30 03:02:55.746   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-30 03:02:55.746   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-30 03:02:55.747 File: 'capitIndexChart1M.html' [2022-03-30T02:02:52.293Z] [40796]
+. 2022-03-30 03:02:55.766 Copying "capitIndexChart1M.html" to remote directory started.
+. 2022-03-30 03:02:55.766 Binary transfer mode selected.
+. 2022-03-30 03:02:55.767 Starting upload of G:\My Drive\GITHUB\davidcapit.github.io\capitIndexChart1M.html
+> 2022-03-30 03:02:55.767 TYPE I
+< 2022-03-30 03:02:55.795 200 TYPE is now 8-bit binary
+> 2022-03-30 03:02:55.795 PASV
+< 2022-03-30 03:02:55.813 227 Entering Passive Mode (89,200,136,154,118,232)
+> 2022-03-30 03:02:55.815 STOR capitIndexChart1M.html
+. 2022-03-30 03:02:55.815 Connecting to 89.200.136.154:30440 ...
+< 2022-03-30 03:02:55.855 150 Accepted data connection
+. 2022-03-30 03:02:55.878 Session ID reused
+. 2022-03-30 03:02:55.878 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+. 2022-03-30 03:02:55.878 TLS connection established
+< 2022-03-30 03:02:55.922 226-File successfully transferred
+< 2022-03-30 03:02:55.923 226 0.029 seconds (measured here), 1.35 Mbytes per second
+> 2022-03-30 03:02:55.924 MFMT 20220330020252 capitIndexChart1M.html
+< 2022-03-30 03:02:55.949 213 UTIME OK
+. 2022-03-30 03:02:55.949 Upload successful
+. 2022-03-30 03:02:55.950 Transfer done: 'capitIndexChart1M.html' => '/webpages/capitIndexChart1M.html' [40796]
+. 2022-03-30 03:02:55.950 Copying finished: Transferred: 40,796, Elapsed: 0:00:00, CPS: 434,000/s
+> 2022-03-30 03:02:55.950 Script: put capitIndexChart1W.html
+. 2022-03-30 03:02:55.953 Copying 1 files/directories to remote directory "/webpages" - total size: 15,651
+. 2022-03-30 03:02:55.954   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-30 03:02:55.954   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-30 03:02:55.966   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-30 03:02:55.976 File: 'capitIndexChart1W.html' [2022-03-30T02:02:51.722Z] [15651]
+. 2022-03-30 03:02:55.990 Copying "capitIndexChart1W.html" to remote directory started.
+. 2022-03-30 03:02:55.991 Binary transfer mode selected.
+. 2022-03-30 03:02:55.991 Starting upload of G:\My Drive\GITHUB\davidcapit.github.io\capitIndexChart1W.html
+> 2022-03-30 03:02:55.992 TYPE I
+< 2022-03-30 03:02:56.011 200 TYPE is now 8-bit binary
+> 2022-03-30 03:02:56.011 PASV
+< 2022-03-30 03:02:56.032 227 Entering Passive Mode (89,200,136,154,118,143)
+> 2022-03-30 03:02:56.033 STOR capitIndexChart1W.html
+. 2022-03-30 03:02:56.034 Connecting to 89.200.136.154:30351 ...
+< 2022-03-30 03:02:56.084 150 Accepted data connection
+. 2022-03-30 03:02:56.112 Session ID reused
+. 2022-03-30 03:02:56.113 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+. 2022-03-30 03:02:56.114 TLS connection established
+< 2022-03-30 03:02:56.159 226-File successfully transferred
+< 2022-03-30 03:02:56.160 226 0.028 seconds (measured here), 0.52 Mbytes per second
+> 2022-03-30 03:02:56.161 MFMT 20220330020251 capitIndexChart1W.html
+< 2022-03-30 03:02:56.180 213 UTIME OK
+. 2022-03-30 03:02:56.181 Upload successful
+. 2022-03-30 03:02:56.181 Transfer done: 'capitIndexChart1W.html' => '/webpages/capitIndexChart1W.html' [15651]
+. 2022-03-30 03:02:56.182 Copying finished: Transferred: 15,651, Elapsed: 0:00:00, CPS: 166,500/s
+> 2022-03-30 03:02:56.182 Script: put capitIndexChart1Y.html
+. 2022-03-30 03:02:56.184 Copying 1 files/directories to remote directory "/webpages" - total size: 12,845
+. 2022-03-30 03:02:56.184   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-30 03:02:56.184   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-30 03:02:56.185   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-30 03:02:56.186 File: 'capitIndexChart1Y.html' [2022-03-30T02:02:52.736Z] [12845]
+. 2022-03-30 03:02:56.199 Copying "capitIndexChart1Y.html" to remote directory started.
+. 2022-03-30 03:02:56.199 Binary transfer mode selected.
+. 2022-03-30 03:02:56.200 Starting upload of G:\My Drive\GITHUB\davidcapit.github.io\capitIndexChart1Y.html
+> 2022-03-30 03:02:56.200 TYPE I
+< 2022-03-30 03:02:56.217 200 TYPE is now 8-bit binary
+> 2022-03-30 03:02:56.218 PASV
+< 2022-03-30 03:02:56.243 227 Entering Passive Mode (89,200,136,154,117,75)
+> 2022-03-30 03:02:56.244 STOR capitIndexChart1Y.html
+. 2022-03-30 03:02:56.244 Connecting to 89.200.136.154:30027 ...
+< 2022-03-30 03:02:56.281 150 Accepted data connection
+. 2022-03-30 03:02:56.304 Session ID reused
+. 2022-03-30 03:02:56.304 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+. 2022-03-30 03:02:56.304 TLS connection established
+< 2022-03-30 03:02:56.329 226-File successfully transferred
+< 2022-03-30 03:02:56.329 226 0.002 seconds (measured here), 5.26 Mbytes per second
+> 2022-03-30 03:02:56.330 MFMT 20220330020252 capitIndexChart1Y.html
+< 2022-03-30 03:02:56.356 213 UTIME OK
+. 2022-03-30 03:02:56.357 Upload successful
+. 2022-03-30 03:02:56.357 Transfer done: 'capitIndexChart1Y.html' => '/webpages/capitIndexChart1Y.html' [12845]
+. 2022-03-30 03:02:56.358 Copying finished: Transferred: 12,845, Elapsed: 0:00:00, CPS: 164,679/s
+> 2022-03-30 03:02:56.358 Script: put capitIndexChart5Y.html
+. 2022-03-30 03:02:56.360 Copying 1 files/directories to remote directory "/webpages" - total size: 39,563
+. 2022-03-30 03:02:56.360   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-30 03:02:56.360   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-30 03:02:56.360   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-30 03:02:56.361 File: 'capitIndexChart5Y.html' [2022-03-30T02:02:53.342Z] [39563]
+. 2022-03-30 03:02:56.381 Copying "capitIndexChart5Y.html" to remote directory started.
+. 2022-03-30 03:02:56.381 Binary transfer mode selected.
+. 2022-03-30 03:02:56.381 Starting upload of G:\My Drive\GITHUB\davidcapit.github.io\capitIndexChart5Y.html
+> 2022-03-30 03:02:56.382 TYPE I
+< 2022-03-30 03:02:56.406 200 TYPE is now 8-bit binary
+> 2022-03-30 03:02:56.406 PASV
+< 2022-03-30 03:02:56.429 227 Entering Passive Mode (89,200,136,154,117,62)
+> 2022-03-30 03:02:56.431 STOR capitIndexChart5Y.html
+. 2022-03-30 03:02:56.431 Connecting to 89.200.136.154:30014 ...
+< 2022-03-30 03:02:56.474 150 Accepted data connection
+. 2022-03-30 03:02:56.492 Session ID reused
+. 2022-03-30 03:02:56.494 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+. 2022-03-30 03:02:56.494 TLS connection established
+< 2022-03-30 03:02:56.539 226-File successfully transferred
+< 2022-03-30 03:02:56.539 226 0.026 seconds (measured here), 1.47 Mbytes per second
+> 2022-03-30 03:02:56.540 MFMT 20220330020253 capitIndexChart5Y.html
+< 2022-03-30 03:02:56.564 213 UTIME OK
+. 2022-03-30 03:02:56.564 Upload successful
+. 2022-03-30 03:02:56.565 Transfer done: 'capitIndexChart5Y.html' => '/webpages/capitIndexChart5Y.html' [39563]
+. 2022-03-30 03:02:56.565 Copying finished: Transferred: 39,563, Elapsed: 0:00:00, CPS: 425,408/s
+> 2022-03-30 03:02:56.565 Script: put capitIndexChartMAX.html
+. 2022-03-30 03:02:56.569 Copying 1 files/directories to remote directory "/webpages" - total size: 40,062
+. 2022-03-30 03:02:56.569   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-30 03:02:56.569   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-30 03:02:56.569   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-30 03:02:56.570 File: 'capitIndexChartMAX.html' [2022-03-30T02:02:53.875Z] [40062]
+. 2022-03-30 03:02:56.588 Copying "capitIndexChartMAX.html" to remote directory started.
+. 2022-03-30 03:02:56.589 Binary transfer mode selected.
+. 2022-03-30 03:02:56.589 Starting upload of G:\My Drive\GITHUB\davidcapit.github.io\capitIndexChartMAX.html
+> 2022-03-30 03:02:56.589 TYPE I
+< 2022-03-30 03:02:56.610 200 TYPE is now 8-bit binary
+> 2022-03-30 03:02:56.610 PASV
+< 2022-03-30 03:02:56.634 227 Entering Passive Mode (89,200,136,154,117,242)
+> 2022-03-30 03:02:56.635 STOR capitIndexChartMAX.html
+. 2022-03-30 03:02:56.635 Connecting to 89.200.136.154:30194 ...
+< 2022-03-30 03:02:56.686 150 Accepted data connection
+. 2022-03-30 03:02:56.712 Session ID reused
+. 2022-03-30 03:02:56.712 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+. 2022-03-30 03:02:56.712 TLS connection established
+< 2022-03-30 03:02:56.765 226-File successfully transferred
+< 2022-03-30 03:02:56.766 226 0.038 seconds (measured here), 1.02 Mbytes per second
+> 2022-03-30 03:02:56.767 MFMT 20220330020253 capitIndexChartMAX.html
+< 2022-03-30 03:02:56.824 213 UTIME OK
+. 2022-03-30 03:02:56.824 Upload successful
+. 2022-03-30 03:02:56.825 Transfer done: 'capitIndexChartMAX.html' => '/webpages/capitIndexChartMAX.html' [40062]
+. 2022-03-30 03:02:56.825 Copying finished: Transferred: 40,062, Elapsed: 0:00:00, CPS: 284,127/s
+> 2022-03-30 03:02:56.826 Script: put sample-table-1M.html
+. 2022-03-30 03:02:56.827 Copying 1 files/directories to remote directory "/webpages" - total size: 2,527
+. 2022-03-30 03:02:56.828   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-30 03:02:56.828   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-30 03:02:56.828   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-30 03:02:56.829 File: 'sample-table-1M.html' [2022-03-30T02:02:48.508Z] [2527]
+. 2022-03-30 03:02:56.831 Copying "sample-table-1M.html" to remote directory started.
+. 2022-03-30 03:02:56.831 Binary transfer mode selected.
+. 2022-03-30 03:02:56.832 Starting upload of G:\My Drive\GITHUB\davidcapit.github.io\sample-table-1M.html
+> 2022-03-30 03:02:56.832 TYPE I
+< 2022-03-30 03:02:56.871 200 TYPE is now 8-bit binary
+> 2022-03-30 03:02:56.871 PASV
+< 2022-03-30 03:02:56.913 227 Entering Passive Mode (89,200,136,154,117,178)
+> 2022-03-30 03:02:56.914 STOR sample-table-1M.html
+. 2022-03-30 03:02:56.914 Connecting to 89.200.136.154:30130 ...
+< 2022-03-30 03:02:56.964 150 Accepted data connection
+. 2022-03-30 03:02:56.996 Session ID reused
+. 2022-03-30 03:02:56.996 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+. 2022-03-30 03:02:56.996 TLS connection established
+< 2022-03-30 03:02:57.016 226-File successfully transferred
+< 2022-03-30 03:02:57.016 226 0.002 seconds (measured here), 1.44 Mbytes per second
+> 2022-03-30 03:02:57.017 MFMT 20220330020248 sample-table-1M.html
+< 2022-03-30 03:02:57.055 213 UTIME OK
+. 2022-03-30 03:02:57.057 Upload successful
+. 2022-03-30 03:02:57.058 Transfer done: 'sample-table-1M.html' => '/webpages/sample-table-1M.html' [2527]
+. 2022-03-30 03:02:57.066 Copying finished: Transferred: 2,527, Elapsed: 0:00:00, CPS: 27,172/s
+> 2022-03-30 03:02:57.066 Script: put sample-table-2M.html
+. 2022-03-30 03:02:57.070 Copying 1 files/directories to remote directory "/webpages" - total size: 2,530
+. 2022-03-30 03:02:57.070   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-30 03:02:57.070   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-30 03:02:57.070   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-30 03:02:57.071 File: 'sample-table-2M.html' [2022-03-30T02:02:48.953Z] [2530]
+. 2022-03-30 03:02:57.074 Copying "sample-table-2M.html" to remote directory started.
+. 2022-03-30 03:02:57.074 Binary transfer mode selected.
+. 2022-03-30 03:02:57.075 Starting upload of G:\My Drive\GITHUB\davidcapit.github.io\sample-table-2M.html
+> 2022-03-30 03:02:57.075 TYPE I
+< 2022-03-30 03:02:57.111 200 TYPE is now 8-bit binary
+> 2022-03-30 03:02:57.111 PASV
+< 2022-03-30 03:02:57.149 227 Entering Passive Mode (89,200,136,154,118,152)
+> 2022-03-30 03:02:57.151 STOR sample-table-2M.html
+. 2022-03-30 03:02:57.151 Connecting to 89.200.136.154:30360 ...
+< 2022-03-30 03:02:57.206 150 Accepted data connection
+. 2022-03-30 03:02:57.239 Session ID reused
+. 2022-03-30 03:02:57.240 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+. 2022-03-30 03:02:57.240 TLS connection established
+< 2022-03-30 03:02:57.260 226-File successfully transferred
+< 2022-03-30 03:02:57.261 226 0.002 seconds (measured here), 1.25 Mbytes per second
+> 2022-03-30 03:02:57.262 MFMT 20220330020248 sample-table-2M.html
+< 2022-03-30 03:02:57.288 213 UTIME OK
+. 2022-03-30 03:02:57.289 Upload successful
+. 2022-03-30 03:02:57.289 Transfer done: 'sample-table-2M.html' => '/webpages/sample-table-2M.html' [2530]
+. 2022-03-30 03:02:57.290 Copying finished: Transferred: 2,530, Elapsed: 0:00:00, CPS: 32,435/s
+> 2022-03-30 03:02:57.290 Script: put sample-table-3M.html
+. 2022-03-30 03:02:57.292 Copying 1 files/directories to remote directory "/webpages" - total size: 2,534
+. 2022-03-30 03:02:57.292   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-30 03:02:57.293   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-30 03:02:57.293   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-30 03:02:57.293 File: 'sample-table-3M.html' [2022-03-30T02:02:49.337Z] [2534]
+. 2022-03-30 03:02:57.296 Copying "sample-table-3M.html" to remote directory started.
+. 2022-03-30 03:02:57.296 Binary transfer mode selected.
+. 2022-03-30 03:02:57.297 Starting upload of G:\My Drive\GITHUB\davidcapit.github.io\sample-table-3M.html
+> 2022-03-30 03:02:57.297 TYPE I
+< 2022-03-30 03:02:57.330 200 TYPE is now 8-bit binary
+> 2022-03-30 03:02:57.330 PASV
+< 2022-03-30 03:02:57.354 227 Entering Passive Mode (89,200,136,154,117,178)
+> 2022-03-30 03:02:57.355 STOR sample-table-3M.html
+. 2022-03-30 03:02:57.355 Connecting to 89.200.136.154:30130 ...
+< 2022-03-30 03:02:57.398 150 Accepted data connection
+. 2022-03-30 03:02:57.422 Session ID reused
+. 2022-03-30 03:02:57.422 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+. 2022-03-30 03:02:57.423 TLS connection established
+< 2022-03-30 03:02:57.442 226-File successfully transferred
+< 2022-03-30 03:02:57.442 226 0.001 seconds (measured here), 2.69 Mbytes per second
+> 2022-03-30 03:02:57.443 MFMT 20220330020249 sample-table-3M.html
+< 2022-03-30 03:02:57.469 213 UTIME OK
+. 2022-03-30 03:02:57.469 Upload successful
+. 2022-03-30 03:02:57.470 Transfer done: 'sample-table-3M.html' => '/webpages/sample-table-3M.html' [2534]
+. 2022-03-30 03:02:57.470 Copying finished: Transferred: 2,534, Elapsed: 0:00:00, CPS: 32,075/s
+> 2022-03-30 03:02:57.470 Script: put sample-table-4M.html
+. 2022-03-30 03:02:57.550 Copying 1 files/directories to remote directory "/webpages" - total size: 2,536
+. 2022-03-30 03:02:57.550   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2022-03-30 03:02:57.550   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2022-03-30 03:02:57.551   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2022-03-30 03:02:57.553 File: 'sample-table-4M.html' [2022-03-30T02:02:50.264Z] [2536]
+. 2022-03-30 03:02:57.557 Copying "sample-table-4M.html" to remote directory started.
+. 2022-03-30 03:02:57.557 Binary transfer mode selected.
+. 2022-03-30 03:02:57.558 Starting upload of G:\My Drive\GITHUB\davidcapit.github.io\sample-table-4M.html
+> 2022-03-30 03:02:57.558 TYPE I
+< 2022-03-30 03:02:57.588 200 TYPE is now 8-bit binary
+> 2022-03-30 03:02:57.588 PASV
+< 2022-03-30 03:02:57.612 227 Entering Passive Mode (89,200,136,154,119,4)
+> 2022-03-30 03:02:57.614 STOR sample-table-4M.html
+. 2022-03-30 03:02:57.615 Connecting to 89.200.136.154:30468 ...
+< 2022-03-30 03:02:57.661 150 Accepted data connection
+. 2022-03-30 03:02:57.692 Session ID reused
+. 2022-03-30 03:02:57.708 Using TLSv1.2, cipher TLSv1.2: ECDHE-RSA-AES128-GCM-SHA256, 2048 bit RSA, ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 Kx=ECDH     Au=RSA  Enc=AESGCM(128) Mac=AEAD
+. 2022-03-30 03:02:57.735 TLS connection established
+< 2022-03-30 03:02:57.736 226-File successfully transferred
+< 2022-03-30 03:02:57.737 226 0.017 seconds (measured here), 148.90 Kbytes per second
+> 2022-03-30 03:02:57.738 MFMT 20220330020250 sample-table-4M.html
